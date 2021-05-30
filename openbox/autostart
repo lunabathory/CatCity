@@ -1,0 +1,18 @@
+# required for xfce settings to work
+xfsettingsd &
+
+# load wallpaper
+sleep 1 && nitrogen --restore &
+
+# start the panel
+sleep 2 && tint2 -c ~/.config/tint2/tint2rc &
+sleep 2 && tint2 -c ~/.config/tint2/Buttons.tint2rc &
+sleep 2 && tint2 -c ~/.config/tint2/Clock.tint2rc &
+
+openrgb -p CatCity.orp &
+
+sleep 5 && conky -c /home/luna/.config/conky/CatCitySmallGif.conkyrc &
+sleep 6 && conky -c /home/luna/.config/conky/CatCitySmallScreen.conkyrc &
+sleep 7 && conky -c /home/luna/.config/conky/Circles.conkyrc &
+
+quicktile --daemonize &
