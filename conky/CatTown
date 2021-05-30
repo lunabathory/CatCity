@@ -1,0 +1,3 @@
+conky -c /home/luna/.config/conky/Circles.conkyrc &
+conky -c /home/luna/.config/conky/CatCitySmallScreen.conkyrc &
+conky -c /home/luna/.config/conky/CatCitySmallGif.conkyrc &
